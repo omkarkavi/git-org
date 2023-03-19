@@ -1,1 +1,1 @@
- curl -s https://api.github.com/users/omkarkavi/repos\?per_page\=100 | jq '.[].html_url' | xargs -n 1 git clone
+ curl -s https://api.github.com/orgs/ucb-bar/repos\?per_page\=100 | jq '.[].html_url' | xargs -n 1 git clone
